@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="Button" />
+
+    <style name="Button.Wrap">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">wrap_content</item>
+    </style>
+
+    <style name="Button.MenuButton">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:background">@null</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="Button.Registration">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/login_button_height</item>
+        <item name="android:textStyle">bold|normal</item>
+    </style>
+
+    <style name="Button.Registration.LogIn">
+        <item name="android:layout_marginTop">@dimen/login_screen_login_button_margin_top</item>
+        <item name="android:text">@string/login_button_text</item>
+        <item name="android:background">@drawable/login_button</item>
+    </style>
+
+    <style name="Button.Registration.SignUp">
+        <item name="android:layout_marginBottom">@dimen/signup_button_margin_bottom</item>
+        <item name="android:text">@string/signup_button_text</item>
+        <item name="android:background">@drawable/signup_facebook_button</item>
+    </style>
+
+    <style name="Button.Registration.Facebook">
+        <item name="android:layout_marginBottom">@dimen/signup_button_margin_bottom</item>
+        <item name="android:text">@string/facebook_button_text</item>
+        <item name="android:background">@drawable/signup_facebook_button</item>
+    </style>
+
+    <style name="SignUpButton" parent="Button.Registration">
+        <item name="android:text">@string/signup_button_text</item>
+        <item name="android:background">@drawable/login_button</item>
+        <item name="android:layout_marginBottom">@dimen/signup_button_margin_bottom</item>
+        <item name="android:layout_marginTop">@dimen/signup_button_margin_bottom</item>
+    </style>
+
+    <style name="ForgotPasswordSendButton" parent="Button.Wrap">
+        <item name="android:layout_marginTop">@dimen/forgot_password_send_button_margin_top</item>
+        <item name="android:background">?android:attr/selectableItemBackground</item>
+        <item name="android:text">@string/forgot_password_send_button_label</item>
+        <item name="android:textColor">@color/forgot_password_send_button</item>
+    </style>
+    <style name="Button.TicketAnswer">
+        <item name="android:textColor">@color/blue_inc_clickable</item>
+        <item name="android:background">@drawable/blue_ink_border_rounded_button</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">@dimen/ticket_answer_button_height</item>
+        <item name="android:paddingLeft">@dimen/ticket_answer_button_side_margin</item>
+        <item name="android:paddingRight">@dimen/ticket_answer_button_side_margin</item>
+        <item name="android:fontFamily">@string/roboto_typeface_medium</item>
+        <item name="android:textSize">@dimen/ticket_answer_description_text_size</item>
+    </style>
+</resources>

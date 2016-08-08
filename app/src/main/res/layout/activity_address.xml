@@ -1,0 +1,144 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/RelativeLayout.Base"
+    tools:context=".activity.auth.AddressActivity">
+
+    <include layout="@layout/tool_bar" />
+
+    <RelativeLayout
+        android:id="@+id/relative_district"
+        style="@style/RelativeLayout.Address"
+        android:layout_below="@+id/tool_bar">
+
+        <AutoCompleteTextView
+            android:id="@+id/city_text_view"
+            style="@style/AddressAutoComplete.City"
+            android:layout_toLeftOf="@+id/image_view_clear_district"
+            android:inputType="none"
+            android:nextFocusDown="@+id/street_text_view" />
+
+        <ImageView
+            android:id="@+id/image_view_clear_district"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:padding="@dimen/image_padding"
+            android:src="@drawable/erase"
+            android:visibility="invisible" />
+
+        <ProgressBar
+            android:id="@+id/progress_bar_district"
+            style="?android:attr/progressBarStyleInverse"
+            android:layout_width="16dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="8dp"
+            android:indeterminate="true"
+            android:indeterminateTint="@color/status_bar_color"
+            android:indeterminateTintMode="src_atop"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/relative_city"
+        style="@style/RelativeLayout.Address"
+        android:layout_below="@+id/relative_district"
+        android:visibility="gone">
+
+        <AutoCompleteTextView
+            android:id="@+id/locality_ac_text_view"
+            style="@style/AddressAutoComplete.Locality"
+            android:layout_toLeftOf="@+id/image_view_clear_city"
+            android:nextFocusDown="@+id/house_text_view"
+            android:inputType="textPhonetic"/>
+
+        <ImageView
+            android:id="@+id/image_view_clear_city"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:padding="8dp"
+            android:src="@drawable/erase"
+            android:visibility="invisible" />
+
+        <ProgressBar
+            android:id="@+id/progress_bar_city"
+            style="?android:attr/progressBarStyleInverse"
+            android:layout_width="16dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="8dp"
+            android:indeterminate="true"
+            android:indeterminateTint="@color/status_bar_color"
+            android:indeterminateTintMode="src_atop"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/relative_street"
+        style="@style/RelativeLayout.Address"
+        android:layout_below="@+id/relative_city"
+
+        android:visibility="gone">
+
+        <AutoCompleteTextView
+            android:id="@+id/street_text_view"
+            style="@style/AddressAutoComplete.Street"
+            android:layout_toLeftOf="@+id/image_view_clear_street"
+
+            android:nextFocusDown="@+id/house_text_view" />
+
+        <ImageView
+            android:id="@+id/image_view_clear_street"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:padding="8dp"
+            android:src="@drawable/erase"
+            android:visibility="invisible" />
+
+        <ProgressBar
+            android:id="@+id/progress_bar_street"
+            style="?android:attr/progressBarStyleInverse"
+            android:layout_width="16dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="8dp"
+            android:indeterminate="true"
+            android:indeterminateTint="@color/status_bar_color"
+            android:indeterminateTintMode="src_atop"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:id="@+id/linear_house"
+        style="@style/LinearLayout.Wrap.Address"
+        android:layout_below="@+id/relative_street"
+        android:orientation="horizontal"
+        android:visibility="gone">
+
+        <AutoCompleteTextView
+            android:id="@+id/house_text_view"
+            style="@style/AddressAutoComplete.House"
+            android:nextFocusDown="@+id/app_text_view" />
+
+        <EditText
+            android:id="@+id/flat_text_view"
+            style="@style/AddressAutoComplete.App"
+            android:visibility="gone" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/tool_bar_shadow_height"
+        android:layout_below="@+id/tool_bar"
+        android:background="@drawable/shadow_downside"/>
+
+</RelativeLayout>

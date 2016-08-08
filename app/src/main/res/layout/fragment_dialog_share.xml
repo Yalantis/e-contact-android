@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/LinearLayout.Base"
+    android:background="@android:color/white"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@android:id/title"
+        style="@style/TextView.ShareDialogTitle" />
+
+    <ListView
+        android:id="@android:id/list"
+        style="@style/ListView.ShareDialogList" />
+
+</LinearLayout>

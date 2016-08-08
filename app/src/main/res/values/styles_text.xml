@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="TextView">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="TextView.BaseWidth">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="TextView.Base">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+    
+    <style name="TextView.ShareDialogItemTitle">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_centerVertical">true</item>
+        <item name="android:layout_marginBottom">@dimen/share_dialog_item_margin</item>
+        <item name="android:layout_marginTop">@dimen/share_dialog_item_margin</item>
+        <item name="android:textAppearance">?android:attr/textAppearanceMedium</item>
+        <item name="android:textColor">@android:color/black</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="TextView.ShareDialogTitle">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">?android:attr/actionBarSize</item>
+        <item name="android:background">@color/action_bar_color</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:text">@string/title_share_dialog</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:textSize">@dimen/share_title_text_size</item>
+    </style>
+
+
+    <style name="TextView.TicketTitle">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:lines">2</item>
+        <item name="android:textColor">@color/ticket_item_title</item>
+        <item name="android:textSize">@dimen/title_text_size</item>
+    </style>
+
+    <style name="TextView.TicketDay">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:textColor">@color/ticket_day</item>
+        <item name="android:textSize">@dimen/title_text_day</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="TextView.Address.Item">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:textColor">@color/text_gray</item>
+        <item name="android:padding">@dimen/address_screen_margin_left</item>
+        <item name="android:textSize">@dimen/title_text_size</item>
+    </style>
+
+    <style name="TextView.Likes">
+        <item name="android:drawableLeft">@drawable/ic_thumb_gray</item>
+        <item name="android:textColor">@color/ticket_likes</item>
+    </style>
+    <style name="TextView.TicketBadge">
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:layout_marginTop">10dp</item>
+        <item name="android:paddingBottom">5dp</item>
+        <item name="android:paddingTop">5dp</item>
+        <item name="android:paddingLeft">15dp</item>
+        <item name="android:paddingRight">15dp</item>
+    </style>
+    <style name="TextView.NewTicketLabel" parent="TextView.Base">
+        <item name="android:textSize">@dimen/new_ticket_text_size</item>
+        <item name="android:textColor">@android:color/black</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="TextView.ForgotPassword" parent="TextView.Base">
+        <item name="android:text">@string/forgot_password_dialog_logo_text</item>
+        <item name="android:textColor">@android:color/black</item>
+        <item name="android:textSize">@dimen/forgot_password_logo_text_size</item>
+        <item name="android:textStyle">bold|normal</item>
+    </style>
+
+    <style name="TextView.ForgotPasswordMessage" parent="TextView.Base">
+        <item name="android:layout_marginTop">@dimen/forgot_password_message_margin_top</item>
+        <item name="android:textSize">@dimen/forgot_password_message_text_size</item>
+        <item name="android:text">@string/forgot_password_dialog_message_text</item>
+    </style>
+
+    <style name="TextView.Logo" parent="TextView.Base">
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:textStyle">normal|bold</item>
+        <item name="android:layout_marginTop">@dimen/login_logo_text_margin</item>
+        <item name="android:textSize">@dimen/login_logo_text_size</item>
+        <item name="android:text">@string/login_logo_text</item>
+    </style>
+
+    <style name="TextView.Address" parent="TextView.BaseWidth">
+        <item name="android:text">@string/address_field_label</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/address_text_label_color</item>
+        <item name="android:textSize">@dimen/address_text_label_size</item>
+        <item name="android:paddingLeft">@dimen/address_text_label_padding_left</item>
+    </style>
+
+    <style name="TextView.AddressCreateTicket" parent="TextView.BaseWidth">
+        <item name="android:text">@string/address_field_label</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@android:color/black</item>
+        <item name="android:textSize">@dimen/address_text_label_size</item>
+    </style>
+
+    <style name="TextView.MapSpinner">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:fontFamily">@string/roboto_typeface_medium</item>
+        <item name="android:textColor">@color/tool_bar_color</item>
+        <item name="android:textSize">@dimen/map_spinner_text_size</item>
+        <item name="android:paddingLeft">@dimen/spinner_border_radius</item>
+        <item name="android:textAllCaps">true</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:paddingTop">@dimen/spinner_item_vertical_padding</item>
+        <item name="android:paddingBottom">@dimen/spinner_item_vertical_padding</item>
+    </style>
+
+    <style name="TextView.SearchSpinnerTitle" parent="TextView.MapSpinner">
+        <item name="android:drawablePadding">@dimen/map_spinner_drawable_padding</item>
+        <item name="android:drawableRight">@drawable/ic_dropdown_arrow_down</item>
+    </style>
+
+    <style name="TextView.ProfileInfoRow" parent="TextView.Base">
+        <item name="android:textSize">@dimen/text_size_profile_info_row</item>
+        <item name="android:textColor">@color/text_gray</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:paddingBottom">@dimen/edit_text_text_padding_vertical</item>
+        <item name="android:paddingLeft">@dimen/edit_text_text_padding_horizontal</item>
+        <item name="android:paddingRight">@dimen/edit_text_text_padding_horizontal</item>
+        <item name="android:paddingTop">@dimen/edit_text_text_padding_vertical</item>
+    </style>
+
+    <style name="TextView.EditProfileInfoRow" parent="TextView.ProfileInfoRow">
+        <item name="android:paddingLeft">0dp</item>
+    </style>
+
+    <style name="TextView.Category">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:paddingBottom">@dimen/category_padding</item>
+        <item name="android:paddingLeft">@dimen/md_listitem_control_margin</item>
+        <item name="android:textColor">@android:color/black</item>
+        <item name="android:textSize">@dimen/md_listitem_textsize</item>
+    </style>
+    <style name="TextView.DrawerTitle">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:background">@color/drawer_title_background</item>
+        <item name="android:textColor">@color/white_alpha_text_color</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:paddingLeft">@dimen/drawer_logo_left_padding</item>
+        <item name="android:paddingTop">@dimen/drawer_logo_top_padding</item>
+        <item name="android:paddingBottom">@dimen/drawer_logo_bottom_padding</item>
+        <item name="android:textSize">@dimen/drawer_logo_text_size</item>
+        <item name="android:fontFamily">@string/roboto_typeface_medium</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:clickable">true</item>
+        <item name="android:text">@string/login_logo_text</item>
+    </style>
+
+    <style name="TextView.TicketAnswerTitle">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:fontFamily">@string/roboto_typeface_medium</item>
+        <item name="android:textSize">@dimen/ticket_answer_title_text_size</item>
+        <item name="android:textColor">@color/title_text_color</item>
+    </style>
+
+    <style name="TextView.TicketAnswerDescription">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">@dimen/ticket_answer_description_text_size</item>
+        <item name="android:textColor">@color/description_text_color</item>
+    </style>
+
+    <style name="TextView.Empty">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:textSize">@dimen/empty_text_size</item>
+        <item name="android:visibility">gone</item>
+    </style>
+
+
+</resources>

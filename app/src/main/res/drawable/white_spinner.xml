@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="rectangle">
+
+    <solid android:color="@android:color/white" />
+
+    <stroke android:width="@dimen/spinner_border_height" android:color="@color/tool_bar_color"/>
+
+    <corners android:radius="@dimen/spinner_border_radius" />
+</shape>

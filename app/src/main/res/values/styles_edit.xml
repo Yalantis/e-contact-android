@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="EditText">
+        <item name="android:textColorHint">@color/edit_text_hint_color</item>
+        <item name="android:textColor">@color/edit_txt_color</item>
+
+    </style>
+
+    <style name="EditText.Registration">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:layout_height">@dimen/registration_editText_height</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:background">@null</item>
+        <item name="android:paddingLeft">@dimen/registration_editText_padding_left</item>
+        <item name="android:paddingRight">@dimen/registration_editText_padding_right</item>
+        <item name="android:textColorHint">@color/edit_text_reg_hint_color</item>
+        <item name="android:textColor">@color/edit_txt_reg_color</item>
+    </style>
+
+    <style name="EditText.Registration.EmailEditText">
+        <item name="android:hint">@string/email_edit_text_hint</item>
+        <item name="android:inputType">textEmailAddress</item>
+    </style>
+
+    <style name="EditText.Registration.PasswordEditText">
+        <item name="android:hint">@string/password_editText_hint</item>
+        <item name="android:inputType">textPassword</item>
+    </style>
+
+    <style name="EditText.Registration.InitialsEditText">
+        <item name="android:hint">@string/sign_up_initials</item>
+        <item name="android:inputType">textPersonName|textCapSentences</item>
+        <item name="android:maxLength">@integer/max_name_length</item>
+    </style>
+
+    <style name="EditText.BaseWidth">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="AddressAutoComplete" parent="EditText.Registration">
+        <item name="android:textColorHint">@color/text_darker_grey</item>
+        <item name="android:textCursorDrawable">@drawable/address_cursor_color</item>
+        <item name="android:textColor">@color/address_color</item>
+        <item name="android:textSize">@dimen/address_screen_edit_text_text_size</item>
+        <item name="android:inputType">text</item>
+    </style>
+
+    <style name="AddressAutoComplete.City">
+        <item name="android:hint">@string/city_field_hint</item>
+        <item name="android:imeOptions">actionNext</item>
+    </style>
+
+    <style name="AddressAutoComplete.Locality">
+        <item name="android:hint">@string/locality_field_hint</item>
+        <item name="android:imeOptions">actionNext</item>
+    </style>
+
+    <style name="AddressAutoComplete.Street">
+        <item name="android:hint">@string/street_field_hint</item>
+        <item name="android:imeOptions">actionNext</item>
+    </style>
+
+    <style name="AddressAutoComplete.House">
+        <item name="android:hint">@string/house_field_hint</item>
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:background">@drawable/address_field_background</item>
+        <item name="android:imeOptions">actionNext</item>
+    </style>
+
+    <style name="AddressAutoComplete.App">
+        <item name="android:hint">@string/app_field_hint</item>
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:background">@drawable/address_field_background</item>
+        <item name="android:layout_marginLeft">@dimen/address_screen_margin_right</item>
+        <item name="android:imeOptions">actionDone</item>
+        <item name="android:maxLength">6</item>
+    </style>
+
+    <style name="EditText.EditProfileInfoRow">
+        <item name="android:textSize">@dimen/text_size_profile_info_row</item>
+        <item name="android:background">@null</item>
+        <item name="android:textCursorDrawable">@null</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/text_gray</item>
+        <item name="android:layout_alignParentLeft">true</item>
+        <item name="android:layout_alignParentStart">true</item>
+        <item name="android:layout_centerVertical">true</item>
+    </style>
+
+    <style name="EditText.EditProfileInfoRow.CapitalizeWords">
+        <item name="android:inputType">textCapWords</item>
+        <item name="android:maxLength">@integer/max_name_length</item>
+    </style>
+
+    <style name="ForgotPasswordEditText" parent="EditText.Registration">
+        <item name="android:textColorHint">@color/text_darker_grey</item>
+        <item name="android:hint">@string/email_edit_text_hint</item>
+        <item name="android:background">@drawable/forgot_password_edit_text_background</item>
+        <item name="android:layout_marginTop">@dimen/forgot_password_edit_text_margin_top</item>
+        <item name="android:textColor">@android:color/black</item>
+        <item name="android:inputType">textEmailAddress</item>
+        <item name="android:textCursorDrawable">@drawable/address_cursor_color</item>
+    </style>
+
+
+</resources>

@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                style="@style/View.Base"
+    >
+
+    <com.google.android.gms.maps.MapView
+        xmlns:map="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/view_map"
+        style="@style/View.Base"
+        android:orientation="vertical"
+        map:mapType="normal"
+        map:uiCompass="true"
+        map:uiRotateGestures="true"
+        map:uiScrollGestures="true"
+        map:uiZoomControls="false"
+        map:uiZoomGestures="true">
+
+    </com.google.android.gms.maps.MapView>
+
+    <LinearLayout
+        android:id="@+id/wrapper_map_results"
+        style="@style/RelativeLayout.MapResults"
+        android:layout_alignParentBottom="true"
+        android:background="@android:color/transparent"
+        android:clickable="true"
+        android:orientation="vertical">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+
+            <Spinner
+                android:id="@+id/spinner_ticket_status"
+                style="@style/Spinner.TicketStatus"
+                android:layout_marginBottom="@dimen/map_spinner_top_margin"
+                android:layout_marginLeft="@dimen/map_results_wrapper_side_padding"
+                android:layout_marginTop="@dimen/map_spinner_top_margin"/>
+
+            <ProgressBar
+                android:id="@+id/progress"
+                style="@style/ProgressBarWhite"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical|end"
+                android:layout_marginRight="@dimen/activity_horizontal_margin"
+                android:visibility="gone"
+
+                />
+
+        </FrameLayout>
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recycler_view_tickets"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_horizontal"
+            android:clipToPadding="false"
+            android:paddingLeft="@dimen/map_results_wrapper_side_padding"
+            android:paddingRight="@dimen/map_results_wrapper_side_padding"/>
+
+
+    </LinearLayout>
+
+</RelativeLayout>

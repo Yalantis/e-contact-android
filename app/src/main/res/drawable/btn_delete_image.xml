@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:state_pressed="true">
+        <layer-list>
+            <item>
+                <shape android:shape="rectangle">
+                    <solid android:color="@color/btn_delete_bg_pressed" />
+                    <corners android:bottomLeftRadius="@dimen/btn_delete_radius" />
+                    <size android:width="@dimen/btn_delete_radius" android:height="@dimen/btn_delete_radius" />
+                </shape>
+            </item>
+            <item android:bottom="@dimen/btn_delete_padding" android:left="@dimen/btn_delete_padding">
+                <bitmap android:gravity="center" android:src="@drawable/ic_close" />
+            </item>
+        </layer-list>
+    </item>
+
+    <item>
+        <layer-list>
+            <item>
+                <shape android:shape="rectangle">
+                    <solid android:color="@color/btn_delete_bg" />
+                    <corners android:bottomLeftRadius="@dimen/btn_delete_radius" />
+                    <size android:width="@dimen/btn_delete_radius" android:height="@dimen/btn_delete_radius" />
+                </shape>
+            </item>
+            <item android:bottom="@dimen/btn_delete_padding" android:left="@dimen/btn_delete_padding">
+                <bitmap android:gravity="center" android:src="@drawable/ic_close" />
+            </item>
+        </layer-list>
+    </item>
+</selector>

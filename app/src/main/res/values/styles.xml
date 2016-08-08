@@ -1,0 +1,173 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="AppTheme.Base"/>
+
+    <style name="AppTheme.Base" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="android:icon">@mipmap/ic_launcher</item>
+        <item name="windowNoTitle">true</item>
+        <item name="windowActionBar">false</item>
+        <item name="android:windowBackground">@color/base_background_color</item>
+        <item name="colorPrimary">@color/tool_bar_color</item>
+        <item name="colorPrimaryDark">@color/status_bar_color</item>
+        <item name="colorAccent">@color/color_accent</item>
+        <item name="android:textColorPrimary">@android:color/white</item>
+        <item name="android:progressBarStyleSmall">@style/ProgressBarSmall</item>
+        <item name="android:progressBarStyle">@style/ProgressBarSmall</item>
+
+        <item name="android:actionModeCloseDrawable">@drawable/ic_arrow</item>
+        <item name="android:actionModeBackground">@color/tool_bar_color</item>
+
+        <item name="md_dark_theme">false</item>
+        <item name="md_background_color">@android:color/white</item>
+        <item name="md_title_color">@color/dialog_title</item>
+        <item name="md_content_color">@color/dialog_title</item>
+        <item name="md_positive_color">@color/tool_bar_color</item>
+        <item name="md_neutral_color">@color/tool_bar_color</item>
+        <item name="md_negative_color">@color/tool_bar_color</item>
+        <item name="md_widget_color">@color/tool_bar_color</item>
+        <item name="md_item_color">@color/dialog_title</item>
+        <item name="md_divider_color">#00ffffff</item>
+        <item name="md_title_gravity">start</item>
+        <item name="md_content_gravity">start</item>
+        <item name="md_items_gravity">start</item>
+        <item name="md_buttons_gravity">start</item>
+        <item name="md_btnstacked_gravity">end</item>
+    </style>
+
+    <style name="LoginActivity" parent="AppTheme.Base">
+        <item name="colorPrimary">@color/tool_bar_color</item>
+        <item name="colorPrimaryDark">@color/status_bar_color</item>
+        <item name="colorAccent">@color/color_accent</item>
+    </style>
+
+    <style name="FullyTranslucent" parent="android:Theme.Translucent.NoTitleBar">
+        <item name="android:progressBarStyle">@style/InvisibleProgress</item>
+    </style>
+
+    <style name="InvisibleProgress">
+        <item name="android:visibility">gone</item>
+    </style>
+
+    <style name="Theme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="colorPrimary">@color/tool_bar_color</item>
+        <item name="colorPrimaryDark">@color/tool_bar_color</item>
+        <item name="colorAccent">@color/tool_bar_color</item>
+    </style>
+
+    <style name="ProgressBarSmall" parent="@style/Widget.AppCompat.ProgressBar">
+        <item name="colorPrimary">@color/tool_bar_color</item>
+        <item name="colorPrimaryDark">@color/tool_bar_color</item>
+        <item name="colorAccent">@color/status_bar_color</item>
+
+        <item name="android:minWidth">16dip</item>
+        <item name="android:maxWidth">16dip</item>
+        <item name="android:minHeight">16dip</item>
+        <item name="android:maxHeight">16dip</item>
+    </style>
+
+
+    <style name="ProgressBarWhite" parent="@style/ProgressBarSmall">
+    </style>
+
+    <style name="AppCompatAlertDialogStyle" parent="Theme.AppCompat.Light.Dialog.Alert">
+        <item name="colorPrimary">@color/color_accent</item>
+        <item name="colorPrimaryDark">@color/tool_bar_color</item>
+        <item name="colorAccent">@color/status_bar_color</item>
+    </style>
+
+
+    <style name="SplashTheme" parent="Theme.AppCompat.NoActionBar">
+        <item name="android:windowBackground">@drawable/logo_econtact</item>
+    </style>
+    <style name="AppActionBarTheme" parent="@style/AppTheme">
+        <!--<item name="android:actionBarTabStyle">@style/MyActionBarTabs</item>-->
+    </style>
+
+    <style name="LoginScreen" parent="AppTheme">
+
+    </style>
+
+    <style name="AppTheme.NewTicketTheme" parent="AppTheme">
+        <item name="colorAccent">@color/status_bar_color</item>
+    </style>
+
+    <style name="ImageActivity" parent="AppTheme">
+        <item name="colorPrimary">@color/primary_black</item>
+        <item name="colorPrimaryDark">@android:color/black</item>
+    </style>
+
+    <!--Style for UI-->
+
+    <style name="View"/>
+
+    <style name="View.Base">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+    </style>
+
+    <style name="View.Wrapped">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="View.WrappedWide">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="CircularProgressButton"/>
+
+    <style name="Divider">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">1px</item>
+        <item name="android:background">@color/divider_item</item>
+    </style>
+
+    <style name="Divider.Login">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">1dp</item>
+        <item name="android:background">@color/login_block_divider</item>
+    </style>
+
+    <style name="Spinner"/>
+
+    <style name="Spinner.TicketStatus" parent="Widget.AppCompat.Spinner.DropDown.ActionBar">
+        <item name="android:layout_width">160dp</item>
+        <item name="android:layout_height">@dimen/map_spinner_height</item>
+        <item name="android:background">@drawable/white_spinner</item>
+        <item name="android:divider">@null</item>
+        <item name="android:spinnerMode">dropdown</item>
+        <item name="android:paddingLeft">@dimen/spinner_border_radius</item>
+        <item name="android:paddingRight">@dimen/spinner_border_radius</item>
+    </style>
+
+
+    <style name="View.TicketAnswerDivider">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/ticket_answer_divider_height</item>
+        <item name="android:background">@color/divider_color</item>
+    </style>
+
+
+    <style name="CustomDigitsTheme" parent="Theme.AppCompat.Light">
+        <item name="android:textColorPrimary">@android:color/black</item>
+        <item name="android:textColorSecondary">@android:color/darker_gray</item>
+        <item name="android:windowBackground">@android:color/white</item>
+        <item name="android:textColorLink">@color/tool_bar_color</item>
+        <item name="colorAccent">@color/tool_bar_color</item>
+    </style>
+
+    <style name="LineTittleTicketDetail" parent="TextView">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:textColor">@color/ticket_address</item>
+    </style>
+
+    <style name="LineDateTicketDetail" parent="TextView">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:textColor">@color/ticket_title</item>
+    </style>
+
+</resources>

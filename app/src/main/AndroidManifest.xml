@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+          package="ua.gov.dp.econtact">
+
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.GET_ACCOUNTS"/>
+    <uses-permission android:name="android.permission.USE_CREDENTIALS"/>
+    <uses-permission android:name="android.permission.MANAGE_ACCOUNTS"/>
+    <uses-permission android:name="android.permission.AUTHENTICATE_ACCOUNTS"/>
+    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES"/>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    <uses-permission android:name="android.permission.WAKE_LOCK"/>
+    <uses-permission android:name="android.permission.VIBRATE"/>
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE"/>
+    <uses-permission android:name="android.permission.RECEIVE_SMS"/>
+    <uses-permission android:name="ua.gov.dp.econtact.permission.C2D_MESSAGE"/>
+
+    <permission
+        android:name="ua.gov.dp.econtact.permission.C2D_MESSAGE"
+        android:protectionLevel="signature"/>
+
+    <application
+        android:name=".App"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".activity.MainActivity"
+            android:screenOrientation="portrait"/>
+
+        <activity
+            android:name=".activity.SplashActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@style/SplashTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.facebook.FacebookActivity"
+            android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|orientation"
+            android:label="@string/app_name"
+            android:theme="@style/FullyTranslucent"/>
+        <activity
+            android:name=".activity.auth.AuthenticatorActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".activity.auth.LoginActivity"
+            android:label="@string/login_screen_title"
+            android:screenOrientation="portrait"
+            android:theme="@style/LoginActivity"/>
+        <activity
+            android:name=".activity.auth.SignUpActivity"
+            android:label="@string/sign_up_screen_title"
+            android:screenOrientation="portrait"
+            android:theme="@style/LoginActivity"
+            android:windowSoftInputMode="adjustResize"/>
+        <activity
+            android:name=".activity.NewTicketActivity"
+            android:label="@string/new_ticket"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NewTicketTheme"
+            android:windowSoftInputMode="adjustResize"/>
+        <activity
+            android:name=".activity.ProfileActivity"
+            android:label="@string/profile"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".activity.EditProfileActivity"
+            android:label="@string/edit_profile_title"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden"/>
+        <activity
+            android:name=".activity.PhotoCropActivity"
+            android:label="@string/title_activity_photo_crop"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".activity.TicketActivity"
+            android:label="@string/label_ticket"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".activity.ImageViewActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/ImageActivity"/>
+        <activity
+            android:name=".gallery.androidcustomgallery.GalleryActivity"
+            android:screenOrientation="portrait"/>
+
+        <service android:name=".account.EContactAuthenticatorService">
+            <intent-filter>
+                <action android:name="android.accounts.AccountAuthenticator"/>
+            </intent-filter>
+
+            <meta-data
+                android:name="android.accounts.AccountAuthenticator"
+                android:resource="@xml/authenticator"/>
+        </service>
+
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version"/>
+        <meta-data
+            android:name="com.facebook.sdk.ApplicationId"
+            android:value="@string/facebook_app_id"/>
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/google_maps_key"/>
+
+        <activity
+            android:name=".activity.auth.AddressActivity"
+            android:label="@string/title_activity_address"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".activity.ChangePasswordActivity"
+            android:label="@string/change_password"
+            android:screenOrientation="portrait"/>
+
+        <meta-data
+            android:name="io.fabric.ApiKey"
+            android:value="yor key here"/>
+        <receiver
+            android:name="com.google.android.gms.gcm.GcmReceiver"
+            android:exported="true"
+            android:permission="com.google.android.c2dm.permission.SEND">
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.RECEIVE"/>
+                <action android:name="com.google.android.c2dm.intent.REGISTRATION"/>
+
+                <category android:name="ua.gov.dp.econtact"/>
+            </intent-filter>
+        </receiver>
+
+        <service
+            android:name=".push.GcmListenerService"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.RECEIVE"/>
+            </intent-filter>
+        </service>
+        <service
+            android:name=".push.InstanceIDListenerService"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="com.google.android.gms.iid.InstanceID"/>
+            </intent-filter>
+        </service>
+        <service
+            android:name=".push.RegistrationService"
+            android:exported="true">
+        </service>
+    </application>
+
+</manifest>

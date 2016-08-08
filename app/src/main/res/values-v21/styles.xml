@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="ProgressBarSmall" parent="Base.Widget.AppCompat.ProgressBar">
+        <item name="android:colorPrimary">@color/tool_bar_color</item>
+        <item name="android:colorPrimaryDark">@color/tool_bar_color</item>
+        <item name="android:colorAccent">@color/status_bar_color</item>
+        <item name="android:indeterminateTint">@color/status_bar_color</item>
+
+        <item name="android:minWidth">16dip</item>
+        <item name="android:maxWidth">16dip</item>
+        <item name="android:minHeight">16dip</item>
+        <item name="android:maxHeight">16dip</item>
+    </style>
+
+    <style name="ProgressBarWhite" parent="@style/ProgressBarSmall">
+        <item name="android:indeterminateTint">@android:color/white</item>
+    </style>
+
+    <style name="Button.Registration">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/login_button_height</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:letterSpacing">0.07</item>
+    </style>
+
+    <style name="CustomDigitsTheme" parent="android:Theme.Material.Light">
+        <item name="android:textColorPrimary">@android:color/black</item>
+        <item name="android:textColorSecondary">@android:color/darker_gray</item>
+        <item name="android:windowBackground">@android:color/white</item>
+        <item name="android:textColorLink">@color/tool_bar_color</item>
+        <item name="android:colorAccent">@color/tool_bar_color</item>
+    </style>
+
+</resources>

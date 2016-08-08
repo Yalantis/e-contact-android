@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="google_maps_key" templateMergeStrategy="preserve" translatable="false">yout key here</string>
+    <string name="facebook_app_id">your key here</string>
+    <string name="dlg_wait">Зачекайте, будь ласка</string>
+    <string name="title_share_dialog">Share via</string>
+    <string name="title_activity_photo_crop">Редагування фото</string>
+
+    <!-- Crop photo-->
+    <string name="lbl_apply">Застосувати</string>
+    <string name="lbl_cancel">Скасувати</string>
+    <string name="lbl_crop_photo">Обрізати фото</string>
+    <string name="lbl_select_photo">Вибрати зображення</string>
+    <string name="lbl_rotate">Повернути</string>
+    <string name="loading_message">Будь ласка, зачекайте</string>
+    <string name="user_credentials_error">Email та пароль повинні бути заповнені</string>
+    <string name="password_length_error">Закороткий пароль (мінімум 4 символи).</string>
+    <string name="email_validation_error">Некоректний email. Перевірте, будь ласка.</string>
+    <string name="email_taken_error">Цей email вже зарееєстровано</string>
+    <string name="phone_taken_error">Цей телефон вже зарееєстровано</string>
+    <string name="password_error">Некоректний пароль</string>
+    <string name="unexpected_error">Неочікувана помилка</string>
+    <string name="unexpected_try_more_error">Неочікувана помилка, спробуйте ще</string>
+    <string name="login_error">Невiрний e-mail чи пароль</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="network_error">Збій мережі</string>
+    <string name="login_screen_title">Логін</string>
+    <string name="sign_up_screen_title">Реєстрація</string>
+
+    <!-- Navigation drawer -->
+    <string name="all_tickets">Всі звернення</string>
+    <string name="tickets_on_map">Звернення на мапі</string>
+    <string name="my_tickets">Мої звернення</string>
+    <string name="drafts">Чернетки</string>
+    <string name="profile">Профіль</string>
+    <string name="sign_in">Увійти в аккаунт</string>
+    <string name="sign_out">Вийти з аккаунту</string>
+    <string name="menu_item_chart">Статистика</string>
+
+
+    <string name="tab_in_progress">В роботі</string>
+    <string name="tab_done">Виконано</string>
+    <string name="menu_filter">Фільтр</string>
+    <string name="menu_send">Відіслати</string>
+
+
+    <string name="menu_edit_profile">Редагувати профіль</string>
+    <string name="menu_save_profile">Зберегти</string>
+    <string name="edit_profile_title">Редагування профілю</string>
+
+    <string name="author">Зроблено з любов\'ю \n%1$s та %2$s </string>
+    <string name="it_ruh">IT Ruh Dnipro</string>
+    <string name="yalantis">Yalantis</string>
+    <!-- New ticket -->
+    <string name="category">Категорія</string>
+    <string name="territory_bind">Територіальна прив\'язка</string>
+    <string name="my_location_bind">Прив\'язка до моєї адреси</string>
+    <string name="choose_address_on_map">Обрати адресу на мапі</string>
+    <string name="ticket_content">Зміст проблеми</string>
+    <string name="describe_problem">Опишіть проблему</string>
+    <string name="additional_comment">Додатковий коментар</string>
+    <string name="desc_problem_label">Зміст проблеми</string>
+    <string name="dialog_draft_title">Зберегти як чернетку?</string>
+    <string name="dialog_draft_back_message">Ви бажаєте зберегти звернення як чернетку?</string>
+    <string name="dialog_draft_changes_message">Ви бажаєте зберегти зміни?</string>
+    <string name="dialog_draft_connectivity_message">Відсутній зв\'язок з інтернетом.\nВи можете надіслати заявку при наявності інтернету.</string>
+    <string name="empty_address">Адреса не обрана</string>
+    <string name="empty_category">Категорія не обрана</string>
+    <string name="delete">Видалити</string>
+    <string name="ticket_created">Ваше звернення відправлено на модерацію</string>
+
+    <!--login screen -->
+    <string name="login_logo_text">e-contact</string>
+    <string name="email_edit_text_hint">E-mail</string>
+    <string name="password_editText_hint">Пароль</string>
+    <string name="login_button_text">Увійти</string>
+    <string name="signup_button_text">Зареєструватися</string>
+    <string name="facebook_button_text">Увійти через Facebook</string>
+
+    <string name="empty_email_message">E-mail порожній</string>
+    <string name="address">Адреса</string>
+    <string name="new_ticket">Додати звернення</string>
+    <string name="error_text_empty">Введіть коректні дані</string>
+    <string name="password_reset_success">На %s надіслано новий пароль, перевірте поштову скриньку та папку Спам</string>
+    <string name="password_reset_user_not_found">Користувача з цією поштовою скринькою не знайдено, зареєструйтесь</string>
+    <!-- sign up screen -->
+    <string name="sign_up_initials">П.І.Б</string>
+    <string name="address_field_label">Адреса</string>
+    <string name="title_activity_address">Адреса</string>
+    <string name="sign_up_first_name">Прізвище</string>
+    <string name="sign_up_second_name">Ім\'я</string>
+    <string name="sign_up_middle_name">По батькові</string>
+
+    <string name="ukraine_phone_example">+380631111111</string>
+    <string name="task_all">Усі статуси</string>
+    <string name="category_all">Всі категорії</string>
+    <string name="category_none">Ви маєте обрати категорію</string>
+    <string name="task_done">Виконано</string>
+    <string name="task_in_process">В роботі</string>
+    <string name="task_pending">Очікує</string>
+    <string name="task_day_single">День</string>
+    <string name="task_day_couple">Дні</string>
+    <string name="task_days">Днів</string>
+
+    <plurals name="task_days">
+        <item quantity="one">%d день</item>
+        <item quantity="few">%d дні</item>
+        <item quantity="many">%d днів</item>
+        <item quantity="other">%d днів</item>
+    </plurals>
+
+    <plurals name="task_weeks">
+        <item quantity="one">%d тиждень</item>
+        <item quantity="few">%d тижні</item>
+        <item quantity="many">%d тижнів</item>
+        <item quantity="other">%d тижнів</item>
+        </plurals>
+
+    <plurals name="task_months">
+        <item quantity="one">%d місяць</item>
+        <item quantity="few">%d місяці</item>
+        <item quantity="many">%d місяців</item>
+        <item quantity="other">%d місяців</item>
+        </plurals>
+
+    <string-array name="map_task_statuses">
+        <item>@string/task_all</item>
+        <item>@string/task_done</item>
+        <item>@string/task_in_process</item>
+        <item>@string/task_pending</item>
+    </string-array>
+
+    <string name="view_answer">ПЕРЕГЛЯНУТИ ВІДПОВІДЬ</string>
+    <string name="error_download_file">При завантаженні виникла помилка</string>
+    <string name="error_open_file">Не знайдено додатку для перегляду файлу</string>
+    <string name="open_with">Переглянути через</string>
+    <string name="registered_at">Зареєстровано</string>
+    <string name="created_at">Створено</string>
+    <string name="solve_until">Вирішити до</string>
+    <string name="manager">Відповідальний</string>
+    <string name="ticket_text">Текст звернення</string>
+    <string name="real_all">ЧИТАТИ ДАЛІ</string>
+    <string name="see_on_map">ПЕРЕГЛЯНУТИ НА МАПІ</string>
+    <string name="liked_text">Ви вже вподобали це звернення</string>
+    <string name="error">Виникла помилка</string>
+    <string name="error_try_again">Виникла помилка, спробуйте ще раз</string>
+
+    <string name="roboto_typeface_regular">sans_serif</string>
+    <string name="roboto_typeface_medium" translatable="false">sans-serif</string>
+    <string name="roboto_typeface_light" translatable="false">sans-serif-light</string>
+
+    <!-- address screen -->
+    <string name="menu_done_button">Готово</string>
+    <string name="city_field_hint">Район або мiсто</string>
+    <string name="street_field_hint">Вулиця</string>
+    <string name="locality_field_hint">Нас. пункт</string>
+
+    <string name="house_field_hint">№ будинку</string>
+    <string name="app_field_hint">№ квартири</string>
+    <string name="choose_photo">Виберіть фото</string>
+    <string name="error_choose_district">Виберіть район</string>
+    <string name="error_choose_city">Виберіть місто</string>
+    <string name="error_choose_street">Виберіть вулицю</string>
+    <string name="error_choose_house">Виберіть будинок</string>
+    <string name="error_choose_address">Виберіть адресу</string>
+    <string name="error_choose_category">Виберіть категорію</string>
+    <string name="error_choose_problem">Опишіть проблему</string>
+    <string name="image_take_photo">Зробити фото</string>
+    <string name="image_from_gallery">Вибрати існуюче фото</string>
+    <string name="share_ticket">Розповсюдити</string>
+    <string name="error_not_loaded">Увімкніть інтернет, щоб обрати адресу</string>
+
+    <!--forgot password dialog-->
+    <string name="forgot_password_dialog_button_title">Надіслати</string>
+    <string name="forgot_password_dialog_logo_text">Забули пароль?</string>
+    <string name="forgot_password_dialog_message_text">Вкажіть ваш E-mail и ми надішлемо вам инструкцію для відновлення паролю</string>
+    <string name="forgot_password_send_button_label">Надіслати</string>
+
+    <!--Main screen-->
+    <string name="dialog_category_title">Категорії</string>
+    <string name="dialog_category_ok">Ok</string>
+    <string name="ticket_list_empty">Немає звернень</string>
+
+    <!--Edit profile screen-->
+    <string name="dialog_confirm_exit_message">Зберегти зміни у профілі?</string>
+    <string name="dialog_confirm_exit_positive">так</string>
+    <string name="dialog_confirm_exit_negative">ні</string>
+    <string name="label_enable_location_on_map">Дозволити відображення місцезнаходження на мапі?</string>
+    <string name="label_enable">Дозволити</string>
+    <string name="label_ticket">Звернення</string>
+    <string name="label_back_to_map">ПОВЕРНУТИСЯ ДО МАПИ</string>
+    <string name="label_ticket_done">Заявка виконана?</string>
+    <string name="label_yes">ТАК</string>
+    <string name="label_no">НІ</string>
+    <string name="label_answer">Відповідь</string>
+    <string name="tv_folder">Folder</string>
+    <string name="video_toolong">Video should be less than 30 seconds</string>
+    <string name="error_broken_photo">You can’t select broken photo</string>
+    <string name="phone">Номер телефону</string>
+    <string name="birthday">День народження</string>
+    <string name="performer">%1$s (%2$s)</string>
+    <string name="phone_valid_text">* Для закінчення реєстрації необхідно підтвердження номеру телефона</string>
+    <string name="yalantis_link">https://yalantis.com/</string>
+    <string name="it_ruh_link">http://www.itruh.dp.ua/</string>
+    <string name="phone_register_error">Для продовження реєстрації підтвердіть номер телефону</string>
+    <string name="change_password">Змінити пароль</string>
+    <string name="old_password">Старий пароль</string>
+    <string name="new_password">Новий пароль</string>
+    <string name="change_password_success">Пароль змінено</string>
+    <string name="old_password_error">Введений вами пароль не вірний</string>
+    <string name="solved">Вирішено</string>
+    <string name="device_is_not_supported">Пробачте, цей пристрій не підтримується</string>
+    <string name="error_download_failed">При завантаженнi файлу виникла помилка.</string>
+    <plurals name="gallery_title_range">
+        <item quantity="one">
+            %1$2d / %2$d…%3$d photo selected
+        </item>
+        <item quantity="other">
+            %1$2d / %2$d…%3$d photos selected
+        </item>
+    </plurals>
+
+    <plurals name="gallery_title">
+        <item quantity="one">
+            %1$2d / %2$d photo selected
+        </item>
+        <item quantity="other">
+            %1$2d / %2$d photos selected
+        </item>
+    </plurals>
+</resources>

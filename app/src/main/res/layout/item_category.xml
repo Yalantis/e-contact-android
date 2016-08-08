@@ -1,0 +1,14 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/LinearLayout.Category"
+    tools:gravity="start|center_vertical">
+
+    <CheckBox
+        android:id="@+id/control"
+        style="@style/CheckBox.Category" />
+
+    <TextView
+        android:id="@+id/title"
+        style="@style/TextView.Category" />
+
+</LinearLayout>

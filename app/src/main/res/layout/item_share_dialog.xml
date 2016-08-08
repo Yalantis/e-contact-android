@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/categoryCell"
+    style="@style/RelativeLayout.ShareDialog">
+
+    <TextView
+        android:id="@+id/shareName"
+        style="@style/TextView.ShareDialogItemTitle" />
+
+    <ImageView
+        android:id="@+id/shareImage"
+        style="@style/ImageView.ShareDialogImage"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true" />
+
+</RelativeLayout>

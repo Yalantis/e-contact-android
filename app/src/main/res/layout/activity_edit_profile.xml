@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/RelativeLayout.Base">
+
+    <include layout="@layout/tool_bar" />
+
+    <ScrollView
+        style="@style/ScrollView.Base"
+        android:layout_below="@+id/tool_bar">
+
+        <LinearLayout
+            style="@style/LinearLayout.Base"
+            android:divider="@drawable/divider_profile_screen_info_row"
+            android:orientation="vertical"
+            android:paddingBottom="@dimen/activity_vertical_margin"
+            android:paddingLeft="@dimen/activity_horizontal_margin"
+            android:paddingRight="@dimen/activity_horizontal_margin"
+            android:paddingTop="@dimen/activity_vertical_margin"
+            android:showDividers="middle">
+
+            <RelativeLayout style="@style/EditProfileInfoRow">
+
+                <EditText
+                    android:id="@+id/edit_text_last_name"
+                    style="@style/EditText.EditProfileInfoRow.CapitalizeWords"
+                    tools:text="Степаненко Тарас Миколайович" />
+
+            </RelativeLayout>
+
+            <RelativeLayout style="@style/EditProfileInfoRow">
+
+                <EditText
+                    android:id="@+id/edit_text_first_name"
+                    style="@style/EditText.EditProfileInfoRow.CapitalizeWords"
+                    android:layout_toLeftOf="@+id/image_view_icon_first_name"
+                    android:layout_toStartOf="@+id/image_view_icon_first_name"
+                    tools:text="Степаненко Тарас Миколайович" />
+
+            </RelativeLayout>
+
+            <RelativeLayout style="@style/EditProfileInfoRow">
+
+                <EditText
+                    android:id="@+id/edit_text_middle_name"
+                    style="@style/EditText.EditProfileInfoRow.CapitalizeWords"
+                    tools:text="Степаненко Тарас Миколайович" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/wrapper_birthdate"
+                style="@style/EditProfileInfoRow">
+
+                <TextView
+                    android:id="@+id/text_view_birthdate"
+                    style="@style/TextView.EditProfileInfoRow"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_centerVertical="true"
+                    android:layout_toLeftOf="@+id/image_view_icon_edit_birthdate"
+                    android:layout_toStartOf="@+id/image_view_icon_edit_birthdate"
+                    android:hint="@string/birthday"
+                    android:textColorHint="@color/hint"
+                    tools:text="13 березня 1982" />
+
+                <ImageView
+                    android:id="@+id/image_view_icon_edit_birthdate"
+                    style="@style/ImageView.ProfileInfoRowIcon"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/ic_edit_action" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/wrapper_address"
+                style="@style/EditProfileInfoRow">
+
+                <TextView
+                    android:id="@+id/text_view_address"
+                    style="@style/TextView.EditProfileInfoRow"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_centerVertical="true"
+                    android:layout_toLeftOf="@+id/image_view_icon_edit_address"
+                    android:layout_toStartOf="@+id/image_view_icon_edit_address"
+                    tools:text="пр. Героїв, б. 34, кв. 56" />
+
+                <ImageView
+                    android:id="@+id/image_view_icon_edit_address"
+                    style="@style/ImageView.ProfileInfoRowIcon"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/ic_edit_action" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/wrapper_change_password"
+                style="@style/EditProfileInfoRow">
+
+                <TextView
+                    android:id="@+id/text_view_change_password"
+                    style="@style/TextView.EditProfileInfoRow"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_centerVertical="true"
+                    android:layout_toLeftOf="@+id/image_view_icon_change_password"
+                    android:layout_toStartOf="@+id/image_view_icon_change_password"
+                    android:text="@string/change_password" />
+
+                <ImageView
+                    android:id="@+id/image_view_icon_change_password"
+                    style="@style/ImageView.ProfileInfoRowIcon"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/ic_edit_action" />
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/tool_bar_shadow_height"
+        android:layout_below="@+id/tool_bar"
+        android:background="@drawable/shadow_downside"/>
+
+</RelativeLayout>

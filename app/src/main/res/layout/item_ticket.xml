@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:id="@+id/relative_layout"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/ticket_item_height"
+                android:layout_margin="@dimen/tickets_padding"
+                android:background="@drawable/list_item_shape">
+
+    <RelativeLayout
+        android:id="@+id/image_like_container"
+        android:layout_width="80dp"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/img_category"
+            style="@style/ImageView.Base"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            tools:src="@drawable/ic_doc"
+            />
+
+        <TextView
+            android:id="@+id/txt_likes"
+            style="@style/TextView.Likes"
+            android:layout_width="wrap_content"
+            android:layout_height="16dp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="18dp"
+            android:drawableLeft="@drawable/ic_thumb_gray"
+            android:drawablePadding="@dimen/likes_drawable_padding"
+            android:textStyle="bold"
+            tools:text="49"/>
+
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/divider"
+        style="@style/Divider"
+        android:layout_height="126dp"
+        android:layout_width="1dp"
+        android:layout_marginRight="@dimen/divider_right_margin"
+        android:layout_toRightOf="@id/image_like_container"/>
+
+    <TextView
+        android:id="@+id/txt_title"
+        style="@style/TextView.TicketTitle"
+        android:layout_alignParentTop="true"
+        android:layout_marginRight="@dimen/title_right_margin"
+        android:layout_marginTop="@dimen/title_right_margin"
+        android:layout_toRightOf="@+id/divider"
+        tools:text="Питання стосовно нарахування боргу електроенергии"/>
+
+    <TextView
+        android:id="@+id/txt_address"
+        style="@style/TextView.Base"
+        android:layout_alignLeft="@+id/txt_title"
+        android:layout_below="@+id/txt_title"
+        android:layout_marginTop="@dimen/address_top_margin"
+        android:layout_toRightOf="@+id/divider"
+        android:ellipsize="end"
+        android:singleLine="true"
+        android:textColor="@color/ticket_address"
+        tools:text="Вул. Вадима Гетьмана, 42"/>
+
+    <TextView
+        android:id="@+id/txt_due_date"
+        style="@style/TextView.TicketDay"
+        android:layout_alignLeft="@+id/txt_title"
+        android:layout_below="@+id/txt_address"
+        android:layout_marginTop="@dimen/address_top_margin"
+        android:layout_toRightOf="@+id/divider"
+        tools:text="Квi 26, 2016"/>
+
+    <TextView
+        android:id="@+id/txt_days_left"
+        style="@style/TextView.TicketDay"
+        android:layout_alignEnd="@+id/txt_title"
+        android:layout_alignRight="@id/txt_title"
+        android:layout_below="@+id/txt_address"
+        android:layout_marginTop="@dimen/address_top_margin"
+        tools:text="-14 днiв"/>
+</RelativeLayout>

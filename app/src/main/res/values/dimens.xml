@@ -1,0 +1,165 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <!-- share -->
+    <dimen name="share_dialog_item_height">30dp</dimen>
+    <dimen name="share_dialog_padding_item">24dp</dimen>
+    <dimen name="share_dialog_image_size">35dp</dimen>
+    <dimen name="share_dialog_item_margin">15dp</dimen>
+    <dimen name="share_title_text_size">20sp</dimen>
+    <!-- login screen -->
+    <dimen name="login_layout_padding_left">15dp</dimen>
+    <dimen name="login_layout_padding_right">15dp</dimen>
+    <dimen name="login_logo_text_margin">50dp</dimen>
+    <dimen name="login_logo_text_size">36sp</dimen>
+    <dimen name="login_email_password_layout_margin_top">40dp</dimen>
+    <dimen name="registration_editText_height">55dp</dimen>
+    <dimen name="registration_editText_padding_left">15dp</dimen>
+    <dimen name="registration_editText_padding_right">14dp</dimen>
+    <dimen name="login_imageView_padding">15dp</dimen>
+    <dimen name="login_imageView_width">60dp</dimen>
+    <dimen name="login_imageView_height">60dp</dimen>
+    <dimen name="login_button_height">40dp</dimen>
+    <dimen name="login_screen_login_button_margin_top">24dp</dimen>
+    <dimen name="signup_button_margin_bottom">25dp</dimen>
+    <dimen name="facebook_button_margin_bottom">20dp</dimen>
+    <dimen name="login_block_radius">10dp</dimen>
+    <dimen name="btn_fb_height">36dp</dimen>
+    <dimen name="fb_text_size">17sp</dimen>
+    <dimen name="gallery_grid_item_spacing">6dp</dimen>
+    <dimen name="image_preview_size">190dp</dimen>
+
+
+    <dimen name="fb_margin_override_top">13dp</dimen>
+    <dimen name="fb_margin_override_bottom">13dp</dimen>
+    <!--The next value changes the margin between the FB icon and the left border:-->
+    <dimen name="fb_margin_override_lr">10dp</dimen>
+    <!--The next value changes the margin between the FB icon and the login text:-->
+    <dimen name="fb_margin_override_textpadding">17dp</dimen>
+    <!-- sign up screen -->
+    <dimen name="address_text_label_size">18sp</dimen>
+    <dimen name="address_text_label_padding_left">15dp</dimen>
+    <dimen name="address_arrow_margin_right">10dp</dimen>
+    <dimen name="title_text_day">14sp</dimen>
+
+    <dimen name="title_text_size">16sp</dimen>
+    <dimen name="address_top_margin">5dp</dimen>
+    <dimen name="title_right_margin">16dp</dimen>
+    <dimen name="divider_right_margin">16dp</dimen>
+    <dimen name="likes_padding">17dp</dimen>
+    <dimen name="likes_drawable_padding">8dp</dimen>
+    <dimen name="image_category_top_margin">21dp</dimen>
+    <dimen name="image_category_bottom_margin">19dp</dimen>
+
+    <dimen name="image_category_top_padding">3dp</dimen>
+    <dimen name="image_category_margin_bottom">20dp</dimen>
+
+    <dimen name="new_ticket_text_size">16sp</dimen>
+    <dimen name="new_ticket_layout_padding">10dp</dimen>
+
+    <dimen name="tab_padding">7dp</dimen>
+
+    <!--Profile screen-->
+    <dimen name="min_height_profile_info_row">52dp</dimen>
+    <dimen name="edit_text_text_padding_horizontal">15dp</dimen>
+    <dimen name="edit_text_text_padding_vertical">5dp</dimen>
+    <dimen name="text_size_profile_info_row">16sp</dimen>
+    <dimen name="create_ticket_margin">16dp</dimen>
+
+    <!-- address screen -->
+    <dimen name="address_screen_margin_top">15dp</dimen>
+    <dimen name="address_screen_margin_left">15dp</dimen>
+    <dimen name="address_screen_margin_right">15dp</dimen>
+    <dimen name="address_screen_edit_text_text_size">16sp</dimen>
+
+    <!-- forgot password dialog -->
+    <dimen name="forgot_password_logo_text_size">22sp</dimen>
+    <dimen name="forgot_password_message_margin_top">20dp</dimen>
+    <dimen name="forgot_password_message_text_size">17sp</dimen>
+    <dimen name="forgot_password_edit_text_margin_top">15dp</dimen>
+    <dimen name="forgot_password_send_button_margin_top">15dp</dimen>
+
+    <!--Map screen-->
+    <dimen name="spinner_border_height">2dp</dimen>
+    <dimen name="spinner_border_radius">8dp</dimen>
+    <dimen name="map_result_view_height">380dp</dimen>
+    <dimen name="map_result_wrapper_top_margin">48dp</dimen>
+    <dimen name="map_results_wrapper_side_padding">8dp</dimen>
+    <dimen name="fab_margin">15dp</dimen>
+    <dimen name="fab_border_width">2dp</dimen>
+    <dimen name="map_spinner_top_margin">16dp</dimen>
+    <dimen name="map_spinner_height">36dp</dimen>
+    <dimen name="map_spinner_text_size">14sp</dimen>
+    <dimen name="map_spinner_drawable_padding">14dp</dimen>
+    <dimen name="spinner_item_vertical_padding">8dp</dimen>
+    <dimen name="map_results_view_hiding_height">264dp</dimen>
+    <dimen name="map_results_recycler_wrapper_padding">68dp</dimen>
+    <dimen name="cluster_max_size">70dp</dimen>
+    <dimen name="cluster_min_size">60dp</dimen>
+
+    <dimen name="fab_lollipop_margin">65dp</dimen>
+    <dimen name="fab_right_margin">15dp</dimen>
+
+    <!-- Main screen-->
+    <dimen name="tickets_padding">8dp</dimen>
+    <dimen name="ticket_item_height">126dp</dimen>
+    <dimen name="drawer_logo_left_padding">16dp</dimen>
+    <dimen name="drawer_logo_text_size">24sp</dimen>
+    <dimen name="drawer_logo_top_padding">24dp</dimen>
+    <dimen name="drawer_logo_bottom_padding">24dp</dimen>
+    <dimen name="list_item_radius">10dp</dimen>
+
+    <!--Ticket Answer screen-->
+    <dimen name="ticket_answer_title_text_size">20sp</dimen>
+    <dimen name="ticket_answer_description_text_size">16sp</dimen>
+    <dimen name="ticket_answer_divider_height">1dp</dimen>
+    <dimen name="ticket_answer_side_margin">16dp</dimen>
+    <dimen name="ticket_answer_base_vertical_padding">20dp</dimen>
+    <dimen name="ticket_answer_buttons_padding">24dp</dimen>
+    <dimen name="blue_ink_button_border_height">2dp</dimen>
+    <dimen name="blu_ink_button_corner_radius">8dp</dimen>
+    <dimen name="ticket_answer_button_vertical_padding">10dp</dimen>
+    <dimen name="ticket_answer_button_side_margin">33dp</dimen>
+    <dimen name="ticket_answer_button_height">36dp</dimen>
+    <dimen name="btn_delete_radius">75dp</dimen>
+    <dimen name="btn_delete_padding">15dp</dimen>
+    <dimen name="category_padding">5dp</dimen>
+    <dimen name="ticket_answer_filename_text_size">16sp</dimen>
+
+    <!-- Image Item -->
+    <dimen name="image_padding_drawable">15dp</dimen>
+    <dimen name="image_padding_left">20dp</dimen>
+    <dimen name="image_padding_top">10dp</dimen>
+    <dimen name="image_text_size">16sp</dimen>
+
+    <dimen name="btn_like_radius">2dp</dimen>
+    <dimen name="btn_like_drawable_padding">8dp</dimen>
+    <dimen name="image_padding">5dp</dimen>
+    <integer name="max_name_length">30</integer>
+    <integer name="max_phone_length">13</integer>
+    <dimen name="empty_text_size">16sp</dimen>
+    <dimen name="empty_padding">56dp</dimen>
+    <dimen name="body_min_height">100dp</dimen>
+    <dimen name="textview_error_popup_default_width">275dip</dimen>
+    <dimen name="textview_error_popup_padding">5dp</dimen>
+    <dimen name="textview_error_popup_margin">10dp</dimen>
+    <dimen name="regular_dim">10dp</dimen>
+    <dimen name="text_ticket">17sp</dimen>
+    <dimen name="resycle_height">190dp</dimen>
+    <dimen name="logo_size">100dp</dimen>
+    <dimen name="margin_button_info">40dp</dimen>
+    <dimen name="new_tick_divider_height">2dp</dimen>
+    <dimen name="margin_button">15dp</dimen>
+    <dimen name="height_relative_sign_up">50dp</dimen>
+    <dimen name="column_width">139dp</dimen>
+    <dimen name="pie_chart_height">350dp</dimen>
+    <dimen name="padding_share">20dp</dimen>
+    <dimen name="margin_share">30dp</dimen>
+    <dimen name="size_iv_share">40dp</dimen>
+    <dimen name="margin_iv_share">35dp</dimen>
+    <dimen name="title_text_auhtor">12sp</dimen>
+    <dimen name="tool_bar_shadow_height">5dp</dimen>
+    <dimen name="medium_progressbar_size">60dp</dimen>
+
+</resources>

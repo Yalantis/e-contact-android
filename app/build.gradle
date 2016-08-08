@@ -1,0 +1,184 @@
+buildscript {
+    repositories {
+        maven { url 'https://maven.fabric.io/public' }
+    }
+
+    dependencies {
+        classpath 'io.fabric.tools:gradle:1.+'
+    }
+}
+apply plugin: 'com.android.application'
+// This does not break the build when Android Studio is missing the JRebel for Android plugin.
+apply plugin: 'com.zeroturnaround.jrebel.android'
+apply plugin: 'checkstyle'
+apply plugin: 'io.fabric'
+apply plugin: 'realm-android'
+apply from: '../gradle.properties'
+
+apply plugin: "org.sonarqube"
+
+repositories {
+    maven { url "http://mente.github.io/facebook-api-android-aar" }
+    maven { url "http://dl.bintray.com/populov/maven" }
+    maven { url "https://jitpack.io" }
+    mavenCentral()
+    mavenLocal()
+    maven { url 'https://maven.fabric.io/public' }
+}
+
+def getVerName() {
+    return "1.0.7"
+}
+
+def getDate() {
+    return new Date().format('yyyyMMddHHmm')
+}
+
+sonarqube {
+    properties {
+        property "sonar.projectKey", "ua.gov.dp.econtact"
+        property "sonar.projectName", "e-contact"
+        property "sonar.projectVersion", "11"
+        property "sonar.sources", "./src/main/java"
+    }
+}
+
+
+checkstyle {
+    configFile = new File(rootDir, "config/checkstyle/checkstyle.xml")
+}
+
+check.dependsOn 'checkstyle'
+
+task checkstyle(type: Checkstyle) {
+    source 'src/main'
+    include '**/*.java'
+    exclude 'androidTest'
+    exclude 'test'
+    exclude '**/gen/**'
+
+    // empty classpath
+    classpath = files()
+}
+
+android {
+    compileSdkVersion 23
+    buildToolsVersion "23.0.3"
+    defaultConfig {
+        applicationId "ua.gov.dp.econtact"
+        minSdkVersion 16
+        targetSdkVersion 23
+        multiDexEnabled true
+        versionCode 11
+        versionName getVerName()
+        renderscriptTargetApi 17
+        renderscriptSupportModeEnabled true
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_7
+        targetCompatibility JavaVersion.VERSION_1_7
+    }
+
+    packagingOptions {
+        exclude 'META-INF/DEPENDENCIES.txt'
+        exclude 'META-INF/LICENSE.txt'
+        exclude 'META-INF/NOTICE.txt'
+        exclude 'META-INF/NOTICE'
+        exclude 'META-INF/LICENSE'
+        exclude 'META-INF/DEPENDENCIES'
+        exclude 'META-INF/notice.txt'
+        exclude 'META-INF/license.txt'
+        exclude 'META-INF/dependencies.txt'
+        exclude 'META-INF/LGPL2.1'
+    }
+
+    signingConfigs {
+        release {
+            storeFile file(RELEASE_STORE_FILE)
+            storePassword RELEASE_KEYSTORE_PASSWORD
+            keyAlias RELEASE_KEY_ALIAS_NAME
+            keyPassword RELEASE_KEY_ALIAS_PASSWORD
+        }
+        debug {
+            storeFile file('../config/keystore/debug.keystore')
+        }
+    }
+
+    buildTypes {
+        release {
+            signingConfig signingConfigs.release
+            proguardFile PROGUARD_STORE_FILE
+            minifyEnabled false
+        }
+        debug {
+            signingConfig signingConfigs.debug
+            minifyEnabled false
+        }
+    }
+
+    lintOptions {
+        lintConfig file('../config/lint/lint.xml')
+        abortOnError false
+    }
+
+    productFlavors {
+        econtact {
+            resValue "string", "app_name", "e-contact"
+            buildConfigField "boolean", "IS_PROD", "true"
+            ext.betaDistributionReleaseNotes = getDate() + " production"
+            ext.betaDistributionGroupAliases = "test"
+
+        }
+        econtacttest {
+            resValue "string", "app_name", "e-contact"
+            buildConfigField "boolean", "IS_PROD", "false"
+            ext.betaDistributionReleaseNotes = getDate() + " test"
+            ext.betaDistributionGroupAliases = "test"
+            versionName getVerName() + " test server"
+
+        }
+    }
+}
+
+dependencies {
+    compile fileTree(dir: 'libs', include: ['*.jar'])
+    compile 'com.android.support:multidex:1.0.1'
+    compile 'com.android.support:cardview-v7:23.4.0'
+    compile 'com.android.support:design:23.4.0'
+    compile 'com.android.support:recyclerview-v7:23.4.0'
+    compile 'com.android.support:appcompat-v7:23.4.0'
+
+    // View/Dependency Injection
+    compile 'com.jakewharton:butterknife:7.0.1'
+
+    compile 'com.facebook.android:facebook-android-sdk:4.11.0'
+    compile 'de.greenrobot:eventbus:2.4.0'
+    compile 'com.squareup.picasso:picasso:2.5.2'
+    compile 'com.jakewharton.timber:timber:4.1.1'
+    compile 'com.google.android.gms:play-services-location:9.0.2'
+    compile 'com.google.maps.android:android-maps-utils:0.3.4'
+    compile "com.google.android.gms:play-services-gcm:9.0.2"
+
+    compile 'com.squareup.retrofit:retrofit:1.9.0'
+    compile 'com.edmodo:cropper:1.0.1'
+    compile 'com.readystatesoftware.systembartint:systembartint:1.0.3'
+    compile 'com.github.PhilJay:MPAndroidChart:v2.1.3'
+    compile('com.github.afollestad.material-dialogs:core:0.8.5.5@aar') {
+        transitive = false;
+    }
+    compile('com.github.afollestad.material-dialogs:commons:0.8.5.5@aar') {
+        transitive = false;
+    }
+    compile 'com.koushikdutta.ion:ion:2.1.6'
+    compile('com.crashlytics.sdk.android:crashlytics:2.5.2@aar') {
+        transitive = true;
+    }
+    compile 'com.github.chrisbanes.photoview:library:1.2.4'
+    compile('com.digits.sdk.android:digits:1.11.2@aar') {
+        transitive = true;
+    }
+
+// Don't know why, but should be after dependencies declaration
+    apply plugin: 'com.google.gms.google-services'
+}

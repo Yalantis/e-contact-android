@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/all_tickets"
+            android:title="@string/all_tickets"
+            android:icon="@drawable/ic_all_tickets"/>
+
+        <item
+            android:id="@+id/tickets_on_map"
+            android:title="@string/tickets_on_map"
+            android:icon="@drawable/ic_map"/>
+        <!--
+        <item
+            android:id="@id/menu_statistic"
+            android:title="@string/menu_item_chart"
+            android:icon="@drawable/ic_all_tickets"/>
+        -->
+    </group>
+
+    <group
+        android:checkableBehavior="none"
+        android:id="@+id/profile_items">
+
+        <item
+            android:id="@+id/sign_in"
+            android:title="@string/sign_in"
+            android:icon="@null"/>
+
+    </group>
+
+</menu>

@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="RelativeLayout" />
+
+    <style name="RelativeLayout.Base">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+    </style>
+
+    <style name="RelativeLayout.Base.Login">
+        <item name="android:paddingLeft">@dimen/login_layout_padding_left</item>
+        <item name="android:paddingRight">@dimen/login_layout_padding_right</item>
+    </style>
+
+    <style name="RelativeLayout.Wrap">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="RelativeLayout.ShareDialog">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/share_dialog_item_height</item>
+        <item name="android:paddingLeft">@dimen/share_dialog_padding_item</item>
+        <item name="android:paddingRight">@dimen/share_dialog_padding_item</item>
+    </style>
+
+    <style name="RelativeLayout.Address">
+        <item name="android:background">@drawable/address_field_background</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginTop">@dimen/address_screen_margin_top</item>
+        <item name="android:layout_marginLeft">@dimen/address_screen_margin_left</item>
+        <item name="android:layout_marginRight">@dimen/address_screen_margin_right</item>
+    </style>
+
+
+    <style name="RoundedRelative" parent="RelativeLayout.Wrap">
+        <item name="android:layout_marginTop">@dimen/login_email_password_layout_margin_top</item>
+        <item name="android:background">@drawable/registration_layout_background</item>
+    </style>
+
+    <style name="RoundedRelative.SignUp">
+        <item name="android:layout_marginTop">0dp</item>
+    </style>
+
+    <style name="RelativeLayout.MapResults" parent="View.Base">
+        <item name="android:layout_height">@dimen/map_result_view_height</item>
+        <item name="android:background">@android:color/transparent</item>
+    </style>
+
+    <style name="ProfileInfoRow" parent="RelativeLayout.Wrap">
+        <item name="android:minHeight">@dimen/min_height_profile_info_row</item>
+        <item name="android:background">@drawable/bg_profile_row_rounded</item>
+    </style>
+
+    <style name="EditProfileInfoRow" parent="ProfileInfoRow">
+        <item name="android:paddingBottom">@dimen/edit_text_text_padding_vertical</item>
+        <item name="android:paddingLeft">@dimen/edit_text_text_padding_horizontal</item>
+        <item name="android:paddingRight">@dimen/edit_text_text_padding_horizontal</item>
+        <item name="android:paddingTop">@dimen/edit_text_text_padding_vertical</item>
+    </style>
+
+</resources>

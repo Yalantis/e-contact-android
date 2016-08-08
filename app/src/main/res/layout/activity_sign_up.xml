@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/sign_up_screen"
+    style="@style/RelativeLayout.Base"
+    android:background="@color/grey_01">
+
+    <include layout="@layout/tool_bar" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentBottom="true"
+        android:layout_below="@+id/tool_bar"
+        android:fitsSystemWindows="true"
+        android:orientation="vertical">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:scrollbars="none">
+
+            <RelativeLayout
+                android:id="@+id/sign_up_relative_layout"
+                style="@style/RelativeLayout.Base.Login">
+
+                <LinearLayout
+                    style="@style/RoundedRelative.SignUp"
+                    android:id="@+id/form_linear_layout"
+                    android:orientation="vertical">
+
+                    <EditText
+                        android:id="@+id/edit_text_email"
+                        style="@style/EditText.Registration.EmailEditText" />
+
+                    <View style="@style/Divider.Login" />
+
+                    <EditText
+                        android:id="@+id/edit_text_password"
+                        style="@style/EditText.Registration.PasswordEditText" />
+
+                    <View style="@style/Divider.Login" />
+
+                    <EditText
+                        android:id="@+id/edit_text_second_name"
+                        style="@style/EditText.Registration.InitialsEditText"
+                        android:hint="@string/sign_up_first_name" />
+
+                    <View style="@style/Divider.Login" />
+
+                    <EditText
+                        android:id="@+id/edit_text_first_name"
+                        style="@style/EditText.Registration.InitialsEditText"
+
+                        android:hint="@string/sign_up_second_name" />
+
+                    <View style="@style/Divider.Login" />
+
+                    <EditText
+                        android:id="@+id/edit_text_middle_name"
+                        style="@style/EditText.Registration.InitialsEditText"
+                        android:hint="@string/sign_up_middle_name" />
+
+                    <View style="@style/Divider.Login" />
+
+                    <RelativeLayout
+                        android:id="@+id/address_layout"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/height_relative_sign_up">
+
+                        <TextView
+                            android:id="@+id/address_text_view"
+                            style="@style/TextView.Address"
+                            android:layout_centerVertical="true"
+                            android:layout_toLeftOf="@+id/imageView"
+                            android:layout_toStartOf="@+id/imageView" />
+
+                        <ImageView
+                            android:id="@+id/imageView"
+                            style="@style/image_view_arrow"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:src="@drawable/ic_chevron_right_white_24dp" />
+
+                    </RelativeLayout>
+                </LinearLayout>
+
+                <android.support.design.widget.CoordinatorLayout
+                    android:id="@+id/snackbar_location"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerHorizontal="true" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/form_linear_layout"
+                    android:layout_margin="@dimen/margin_button"
+                    android:textColor="@android:color/white"
+                    android:textSize="@dimen/title_text_size"
+                    android:text="@string/phone_valid_text"
+                    android:id="@+id/textView2" />
+            </RelativeLayout>
+        </ScrollView>
+
+        <LinearLayout
+            android:id="@+id/layout_btns"
+            style="@style/RelativeLayout.Base.Login"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <com.digits.sdk.android.DigitsAuthButton
+                android:id="@+id/auth_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:visibility="gone"
+                android:layout_margin="@dimen/activity_horizontal_margin" />
+            <Button
+                android:id="@+id/facebook_button"
+                style="@style/Button.Registration.Facebook"
+                android:visibility="gone" />
+
+            <Button
+                android:id="@+id/sign_up_button"
+                style="@style/SignUpButton" />
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

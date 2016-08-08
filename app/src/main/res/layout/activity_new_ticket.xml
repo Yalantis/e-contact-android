@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/appbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+        <include layout="@layout/tool_bar" />
+
+    </android.support.design.widget.AppBarLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <android.support.v4.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+
+                <RelativeLayout
+                    android:id="@+id/layout_choose_category"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/create_ticket_margin">
+
+                    <TextView
+                        android:id="@+id/txt_view_category"
+                        style="@style/TextView.NewTicketLabel"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true"
+                        android:layout_centerVertical="true"
+                        android:layout_toLeftOf="@+id/category_chooser"
+                        android:text="@string/category" />
+
+                    <ImageButton
+                        android:id="@+id/category_chooser"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:background="@android:color/transparent"
+                        android:src="@drawable/ic_arrow_right"
+                        android:tint="@android:color/black" />
+
+                </RelativeLayout>
+
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:background="@color/new_ticket_divider" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/create_ticket_margin">
+
+                    <TextView
+                        style="@style/TextView.NewTicketLabel"
+                        android:layout_centerVertical="true"
+                        android:text="@string/territory_bind" />
+
+                    <android.support.v7.widget.SwitchCompat
+                        android:id="@+id/territory_bind_switch"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true" />
+
+                </RelativeLayout>
+
+                <Button
+                    android:id="@+id/button_location_bind"
+                    style="?android:attr/borderlessButtonStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/create_ticket_margin"
+                    android:layout_marginBottom="0dp"
+                    android:background="@drawable/selector_add_address"
+                    android:text="@string/my_location_bind"
+                    android:textColor="@drawable/text_selector_location" />
+
+                <Button
+                    android:id="@+id/button_choose_address"
+                    style="?android:attr/borderlessButtonStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/create_ticket_margin"
+                    android:layout_marginTop="@dimen/create_ticket_margin"
+                    android:background="@drawable/selector_add_address"
+                    android:text="@string/choose_address_on_map"
+                    android:textColor="@drawable/text_selector_location" />
+
+
+                <RelativeLayout
+                    android:id="@+id/address_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/create_ticket_margin">
+
+                    <TextView
+                        android:id="@+id/address_text_view"
+                        style="@style/TextView.AddressCreateTicket"
+                        android:layout_toLeftOf="@+id/image_arrow" />
+
+                    <ImageView
+                        android:id="@+id/image_arrow"
+                        style="@style/image_view_arrow"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:background="@android:color/transparent"
+                        android:src="@drawable/ic_arrow_right"
+                        android:tint="@android:color/black" />
+
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/new_tick_divider_height"
+                    android:background="@color/new_ticket_divider" />
+
+                <TextView
+                    style="@style/TextView.NewTicketLabel"
+                    android:layout_centerVertical="true"
+                    android:layout_marginTop="@dimen/create_ticket_margin"
+                    android:paddingLeft="@dimen/create_ticket_margin"
+                    android:text="@string/desc_problem_label" />
+
+                <EditText
+                    android:id="@+id/edit_text_problem"
+                    style="@style/EditText.BaseWidth"
+                    android:background="@null"
+                    android:gravity="top"
+                    android:hint="@string/describe_problem"
+                    android:singleLine="false"
+                    android:inputType="textCapSentences|textMultiLine"
+                    android:minHeight="@dimen/body_min_height"
+                    android:padding="@dimen/create_ticket_margin"
+                    android:layout_height="wrap_content" />
+
+                <LinearLayout
+                    android:id="@+id/container_image"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical" />
+
+            </LinearLayout>
+
+        </android.support.v4.widget.NestedScrollView>
+
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/btn_attach_image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end|bottom"
+            android:layout_margin="@dimen/margin_button"
+            android:src="@drawable/ic_attach_fab"
+            app:backgroundTint="@color/fab_color"
+            app:fabSize="normal" />
+    </FrameLayout>
+</LinearLayout>

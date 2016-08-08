@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="ImageView" />
+
+    <style name="ImageView.ShareDialogImage">
+        <item name="android:layout_width">@dimen/share_dialog_image_size</item>
+        <item name="android:layout_height">@dimen/share_dialog_image_size</item>
+    </style>
+
+    <style name="ImageView.LoginHelp">
+        <item name="android:layout_height">@dimen/login_imageView_height</item>
+        <item name="android:layout_width">@dimen/login_imageView_width</item>
+        <item name="android:padding">@dimen/login_imageView_padding</item>
+
+    </style>
+
+    <style name="ImageView.ProfileInfoRowIcon">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="ImageView.Base">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="image_view_arrow" parent="ImageView.Base">
+        <item name="android:layout_marginRight">@dimen/address_arrow_margin_right</item>
+    </style>
+
+
+</resources>

@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:id="@+id/login_screen"
+                style="@style/RelativeLayout.Base.Login">
+
+    <TextView
+        android:id="@+id/text_logo"
+        style="@style/TextView.Logo"
+        android:layout_centerHorizontal="true"/>
+
+    <RelativeLayout
+        android:id="@+id/email_layout"
+        style="@style/RoundedRelative"
+        android:layout_below="@+id/text_logo">
+
+        <RelativeLayout
+            android:id="@+id/email_holder"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <EditText
+                android:id="@+id/edit_text_email"
+                style="@style/EditText.Registration.EmailEditText"/>
+
+
+            <ImageView
+                android:id="@+id/error_drawable_email"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="@dimen/login_imageView_height"
+                android:layout_marginRight="@dimen/login_imageView_height"
+                android:src="@drawable/ic_error"
+                android:visibility="invisible"/>
+        </RelativeLayout>
+
+        <View
+            style="@style/Divider.Login"
+            android:layout_below="@id/email_holder"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/email_holder">
+
+            <EditText
+                android:id="@+id/edit_text_password"
+                style="@style/EditText.Registration.PasswordEditText"
+                />
+
+
+            <ImageView
+                android:id="@+id/forget_password_image_view"
+                style="@style/ImageView.LoginHelp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:src="@drawable/ic_help_outline_white_24dp"
+                android:visibility="gone"/>
+
+            <ImageView
+                android:id="@+id/error_drawable_password"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="@dimen/login_imageView_height"
+                android:layout_marginRight="@dimen/login_imageView_height"
+                android:src="@drawable/ic_error"
+                android:visibility="invisible"/>
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/login_button"
+        style="@style/Button.Registration.LogIn"
+        android:layout_below="@id/email_layout"/>
+
+    <Button
+        android:id="@+id/sign_up_button"
+        style="@style/Button.Registration.SignUp"
+        android:layout_alignParentBottom="true"/>
+
+
+    <Button
+        android:id="@+id/facebook_button"
+        style="@style/Button.Registration.Facebook"
+        android:visibility="gone"/>
+
+</RelativeLayout>

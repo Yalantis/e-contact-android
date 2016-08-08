@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:layout_width="match_parent"
+
+            android:layout_height="match_parent"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="@dimen/activity_horizontal_margin">
+
+        <TextView
+            android:id="@+id/txt_view_ticket_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:singleLine="false"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/new_ticket_text_size"/>
+
+        <TextView
+            android:id="@+id/txt_view_badge"
+            style="@style/TextView.TicketBadge"/>
+
+        <Button
+            android:id="@+id/see_answer_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/regular_dim"
+            android:background="@null"
+            android:text="@string/view_answer"
+            android:textColor="@color/blue_inc_clickable"
+            android:visibility="gone"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/regular_dim">
+
+            <View
+                android:id="@+id/divider_created"
+                style="@style/Divider"/>
+
+            <TextView
+                style="@style/LineTittleTicketDetail"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_marginTop="@dimen/regular_dim"
+                android:text="@string/created_at"/>
+
+            <TextView
+                android:id="@+id/created_at"
+                style="@style/LineDateTicketDetail"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="@dimen/regular_dim"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/relative_reg_date"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/regular_dim">
+
+            <View
+                android:id="@+id/divider_register"
+                style="@style/Divider"/>
+
+            <TextView
+                style="@style/LineTittleTicketDetail"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_marginTop="@dimen/regular_dim"
+                android:text="@string/registered_at"/>
+
+            <TextView
+                android:id="@+id/registered_at"
+                style="@style/LineDateTicketDetail"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="@dimen/regular_dim"/>
+
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:id="@+id/relative_solve_date"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/regular_dim">
+
+            <View
+                android:id="@+id/divider_solve"
+                style="@style/Divider"/>
+
+            <TextView
+                style="@style/LineTittleTicketDetail"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/divider_solve"
+                android:layout_marginTop="@dimen/regular_dim"
+                android:text="@string/solve_until"/>
+
+            <TextView
+                android:id="@+id/txt_view_completed"
+                style="@style/LineDateTicketDetail"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="@dimen/regular_dim"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/relative_finished_date"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/regular_dim">
+
+            <View
+                android:id="@+id/divider_solved"
+                style="@style/Divider"/>
+
+            <TextView
+                style="@style/LineTittleTicketDetail"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/divider_solved"
+                android:layout_marginTop="@dimen/regular_dim"
+                android:text="@string/solved"/>
+
+            <TextView
+                android:id="@+id/txt_view_finished"
+                style="@style/LineDateTicketDetail"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                android:layout_below="@+id/divider_solved"
+                android:layout_marginTop="@dimen/regular_dim"/>
+
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:id="@+id/relative_manager"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/regular_dim">
+
+            <View
+                android:id="@+id/divider_manager"
+                style="@style/Divider"/>
+
+            <TextView
+                android:id="@+id/textView"
+                style="@style/LineTittleTicketDetail"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/divider_manager"
+                android:layout_marginTop="@dimen/regular_dim"
+                android:text="@string/manager"/>
+
+            <TextView
+                android:id="@+id/txt_view_manager"
+                style="@style/LineDateTicketDetail"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                android:layout_alignTop="@+id/textView"
+                android:layout_toRightOf="@+id/textView"
+                android:gravity="right"/>
+
+        </RelativeLayout>
+
+        <View
+            style="@style/Divider"
+            android:layout_marginTop="@dimen/regular_dim"/>
+
+
+        <TextView
+            android:id="@+id/txt_ticket_description"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/activity_horizontal_margin"
+            android:singleLine="false"
+            android:textColor="@android:color/black"/>
+
+        <Button
+            android:id="@+id/see_whole_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/activity_horizontal_margin"
+            android:background="@null"
+            android:text="@string/real_all"
+            android:textColor="@color/blue_ink_color"
+            android:visibility="gone"/>
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recycler_view_photos"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/resycle_height"
+            android:layout_marginTop="@dimen/activity_horizontal_margin"/>
+
+        <LinearLayout
+            android:id="@+id/linear_map"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/image_padding"
+            android:layout_marginRight="@dimen/image_padding"
+            android:layout_marginTop="@dimen/activity_horizontal_margin"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/like_ticket_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/btn_like"
+                android:drawableLeft="@drawable/ic_thumb"
+                android:drawablePadding="@dimen/btn_like_drawable_padding"
+                android:paddingLeft="@dimen/btn_like_drawable_padding"
+                android:paddingRight="@dimen/btn_like_drawable_padding"/>
+
+            <Button
+                android:id="@+id/see_on_map_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@null"
+                android:text="@string/see_on_map"
+                android:textColor="@color/blue_inc_clickable"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</ScrollView>

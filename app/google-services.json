@@ -1,0 +1,59 @@
+{
+  "project_info": {
+    "project_number": "your project number",
+    "project_id": "e-contact-1017"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:830985978733:android:2093aa503a6bb834",
+        "android_client_info": {
+          "package_name": "com.yalantis"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "your  key"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 1
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:830985978733:android:3d9a3e77b9cb8abd",
+        "android_client_info": {
+          "package_name": "ua.gov.dp.econtact"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [{
+        "current_key": "your  key"
+      }],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 1
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

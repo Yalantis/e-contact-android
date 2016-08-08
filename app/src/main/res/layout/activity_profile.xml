@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/RelativeLayout.Base">
+
+    <include layout="@layout/tool_bar" />
+
+    <ScrollView
+        style="@style/ScrollView.Base"
+        android:layout_below="@+id/tool_bar">
+
+        <LinearLayout
+            style="@style/LinearLayout.Wrap"
+            android:divider="@drawable/divider_profile_screen_info_row"
+            android:orientation="vertical"
+            android:paddingBottom="@dimen/activity_vertical_margin"
+            android:paddingLeft="@dimen/activity_horizontal_margin"
+            android:paddingRight="@dimen/activity_horizontal_margin"
+            android:paddingTop="@dimen/activity_vertical_margin"
+            android:showDividers="middle">
+
+            <RelativeLayout style="@style/ProfileInfoRow">
+
+                <TextView
+                    android:id="@+id/text_view_last_name"
+                    style="@style/TextView.ProfileInfoRow"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_centerVertical="true"
+                    android:layout_toLeftOf="@+id/image_view_icon_last_name"
+                    android:layout_toStartOf="@+id/image_view_icon_last_name"
+                    tools:text="Степаненко Тарас Миколайович" />
+
+                <ImageView
+                    android:id="@id/image_view_icon_last_name"
+                    style="@style/ImageView.ProfileInfoRowIcon"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/edit_text_text_padding_horizontal"
+                    android:src="@drawable/ic_name" />
+
+            </RelativeLayout>
+
+            <RelativeLayout style="@style/ProfileInfoRow">
+
+                <TextView
+                    android:id="@+id/text_view_first_name"
+                    style="@style/TextView.ProfileInfoRow"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_centerVertical="true"
+                    android:layout_toLeftOf="@+id/image_view_icon_first_name"
+                    android:layout_toStartOf="@+id/image_view_icon_first_name"
+                    tools:text="Степаненко Тарас Миколайович" />
+
+                <ImageView
+                    android:id="@+id/image_view_icon_first_name"
+                    style="@style/ImageView.ProfileInfoRowIcon"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/edit_text_text_padding_horizontal"
+                    android:src="@drawable/ic_name" />
+
+            </RelativeLayout>
+
+
+            <RelativeLayout style="@style/ProfileInfoRow">
+
+                <TextView
+                    android:id="@+id/text_view_middle_name"
+                    style="@style/TextView.ProfileInfoRow"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_centerVertical="true"
+                    android:layout_toLeftOf="@+id/image_view_icon_middle_name"
+                    android:layout_toStartOf="@+id/image_view_icon_middle_name"
+                    tools:text="Степаненко Тарас Миколайович" />
+
+                <ImageView
+                    android:id="@id/image_view_icon_middle_name"
+                    style="@style/ImageView.ProfileInfoRowIcon"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/edit_text_text_padding_horizontal"
+                    android:src="@drawable/ic_name" />
+
+            </RelativeLayout>
+
+            <RelativeLayout style="@style/ProfileInfoRow">
+
+                <TextView
+                    android:id="@+id/text_view_email"
+                    style="@style/TextView.ProfileInfoRow"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_centerVertical="true"
+                    android:layout_toLeftOf="@+id/image_view_icon_email"
+                    android:layout_toStartOf="@+id/image_view_icon_email"
+                    tools:text="taras.step@gmail.com" />
+
+                <ImageView
+                    android:id="@+id/image_view_icon_email"
+                    style="@style/ImageView.ProfileInfoRowIcon"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/edit_text_text_padding_horizontal"
+                    android:src="@drawable/ic_email" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/row_phone"
+                style="@style/ProfileInfoRow">
+
+                <TextView
+                    android:id="@+id/text_view_phone"
+                    style="@style/TextView.ProfileInfoRow"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_centerVertical="true"
+                    android:layout_toLeftOf="@+id/image_view_icon_phone"
+                    android:layout_toStartOf="@+id/image_view_icon_phone"
+                    tools:text="098 765 43 21" />
+
+                <ImageView
+                    android:id="@+id/image_view_icon_phone"
+                    style="@style/ImageView.ProfileInfoRowIcon"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/edit_text_text_padding_horizontal"
+                    android:src="@drawable/ic_phone" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/row_birthday"
+                style="@style/ProfileInfoRow">
+
+                <TextView
+                    android:id="@+id/text_view_birthdate"
+                    style="@style/TextView.ProfileInfoRow"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_centerVertical="true"
+                    android:layout_toLeftOf="@+id/image_view_icon_birthdate"
+                    android:layout_toStartOf="@+id/image_view_icon_birthdate"
+                    tools:text="13 березня 1982" />
+
+                <ImageView
+                    android:id="@+id/image_view_icon_birthdate"
+                    style="@style/ImageView.ProfileInfoRowIcon"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/edit_text_text_padding_horizontal"
+                    android:src="@drawable/ic_birthdate" />
+
+            </RelativeLayout>
+
+            <RelativeLayout style="@style/ProfileInfoRow">
+
+                <TextView
+                    android:id="@+id/text_view_address"
+                    style="@style/TextView.ProfileInfoRow"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_centerVertical="true"
+                    android:layout_toLeftOf="@+id/image_view_icon_address"
+                    android:layout_toStartOf="@+id/image_view_icon_address"
+                    tools:text="пр. Героїв, б. 34, кв. 56" />
+
+                <ImageView
+                    android:id="@+id/image_view_icon_address"
+                    style="@style/ImageView.ProfileInfoRowIcon"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/edit_text_text_padding_horizontal"
+                    android:src="@drawable/ic_address" />
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <View
+        android:id="@+id/toolbar_shadow"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/tool_bar_shadow_height"
+        android:layout_below="@+id/tool_bar"
+        android:background="@drawable/shadow_downside"/>
+
+</RelativeLayout>

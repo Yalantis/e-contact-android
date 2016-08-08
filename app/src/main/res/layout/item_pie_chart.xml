@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.github.mikephil.charting.charts.PieChart xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/pie_chart"
+    style="@style/View.Base" />

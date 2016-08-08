@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group
+        android:id="@+id/base_items"
+        android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/all_tickets"
+            android:icon="@drawable/ic_all_tickets"
+            android:title="@string/all_tickets" />
+
+        <item
+            android:id="@+id/tickets_on_map"
+            android:icon="@drawable/ic_map"
+            android:title="@string/tickets_on_map" />
+
+        <item
+            android:id="@+id/my_tickets"
+            android:title="@string/my_tickets"
+            android:icon="@drawable/ic_myissues"/>
+
+        <item
+            android:id="@+id/drafts"
+            android:title="@string/drafts"
+            android:icon="@drawable/ic_draft"/>
+
+    </group>
+
+    <group
+        android:id="@+id/profile_items"
+        android:checkableBehavior="none">
+
+        <item
+            android:id="@+id/profile"
+            android:icon="@null"
+            android:title="@string/profile" />
+
+        <item
+            android:id="@+id/sign_out"
+            android:icon="@null"
+            android:title="@string/sign_out" />
+
+    </group>
+
+
+</menu>

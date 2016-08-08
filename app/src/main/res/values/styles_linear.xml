@@ -1,0 +1,59 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <style name="LinearLayout" />
+
+    <style name="LinearLayout.Base">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+    </style>
+
+    <style name="LinearLayout.Wrap">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">match_parent</item>
+    </style>
+
+    <style name="LinearLayout.BaseFullScreenVertical">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:orientation">vertical</item>
+    </style>
+
+    <style name="LinearLayout.BaseLanding" parent="LinearLayout.BaseFullScreenVertical">
+        <item name="android:gravity">center</item>
+        <item name="android:orientation">vertical</item>
+    </style>
+
+    <style name="LinearLayout.Wrap.Address">
+        <item name="android:layout_marginTop">@dimen/address_screen_margin_top</item>
+        <item name="android:layout_marginLeft">@dimen/address_screen_margin_left</item>
+        <item name="android:layout_marginRight">@dimen/address_screen_margin_right</item>
+    </style>
+
+    <style name="LinearLayout.Category">
+        <item name="android:orientation">horizontal</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:descendantFocusability">blocksDescendants</item>
+        <item name="android:paddingLeft">@dimen/md_dialog_frame_margin</item>
+        <item name="android:paddingRight">@dimen/md_dialog_frame_margin</item>
+        <item name="android:paddingTop">@dimen/category_padding</item>
+        <item name="android:paddingBottom">@dimen/category_padding</item>
+    </style>
+    <style name="LinearLayout.TicketAnswerWrapper">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:orientation">vertical</item>
+        <item name="android:paddingBottom">@dimen/ticket_answer_base_vertical_padding</item>
+        <item name="android:paddingTop">@dimen/ticket_answer_base_vertical_padding</item>
+    </style>
+
+    <style name="LinearLayout.TicketAnswerButtons">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:orientation">horizontal</item>
+        <item name="android:paddingLeft">@dimen/ticket_answer_side_margin</item>
+        <item name="android:paddingRight">@dimen/ticket_answer_side_margin</item>
+        <item name="android:paddingBottom">@dimen/ticket_answer_buttons_padding</item>
+        <item name="android:paddingTop">@dimen/ticket_answer_buttons_padding</item>
+    </style>
+</resources>

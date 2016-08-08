@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/LinearLayout.TicketAnswerWrapper">
+
+    <TextView
+        android:id="@+id/text_view_title"
+        style="@style/TextView.TicketAnswerTitle"
+        android:layout_marginBottom="@dimen/ticket_answer_side_margin"
+        android:layout_marginLeft="@dimen/ticket_answer_side_margin"
+        android:layout_marginRight="@dimen/ticket_answer_side_margin" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/activity_horizontal_margin"
+        android:singleLine="false"
+        android:visibility="gone"
+        android:textColor="@android:color/black"
+        android:layout_margin="@dimen/activity_horizontal_margin"
+        android:id="@+id/text_view_comment" />
+
+    <ListView
+        android:id="@+id/list_files"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:cacheColorHint="@android:color/transparent"
+        android:divider="@color/divider_color"
+        android:dividerHeight="@dimen/ticket_answer_divider_height"
+        android:listSelector="@android:color/transparent" />
+
+    <View
+        style="@style/View.TicketAnswerDivider"
+        android:layout_marginBottom="@dimen/ticket_answer_side_margin"
+        android:layout_marginTop="@dimen/ticket_answer_side_margin"
+        android:visibility="gone" />
+
+    <LinearLayout
+        android:id="@+id/wrapper_controls"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <TextView
+            style="@style/TextView.TicketAnswerTitle"
+            android:layout_marginLeft="@dimen/ticket_answer_side_margin"
+            android:layout_marginRight="@dimen/ticket_answer_side_margin"
+            android:text="@string/label_ticket_done"
+            android:textSize="@dimen/ticket_answer_description_text_size" />
+
+        <LinearLayout style="@style/LinearLayout.TicketAnswerButtons">
+
+            <Button
+                android:id="@+id/button_yes"
+                style="@style/Button.TicketAnswer"
+                android:layout_marginRight="@dimen/ticket_answer_buttons_padding"
+                android:text="@string/label_yes" />
+
+            <Button
+                android:id="@+id/button_no"
+                style="@style/Button.TicketAnswer"
+                android:text="@string/label_no" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

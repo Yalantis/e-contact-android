@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include layout="@layout/tool_bar" />
+
+    <com.edmodo.cropper.CropImageView xmlns:custom="http://schemas.android.com/apk/res-auto"
+        custom:aspectRatioX="5"
+        android:id="@+id/photo"
+        android:layout_below="@+id/tool_bar"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center" />
+
+    <ProgressBar
+        android:id="@+id/progress"
+        android:layout_centerInParent="true"
+        style="@style/ProgressBar.CropProgress" />
+
+</RelativeLayout>

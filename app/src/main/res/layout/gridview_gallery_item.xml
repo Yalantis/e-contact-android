@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ua.gov.dp.econtact.gallery.customcomponents.GalleryFrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                                                                android:layout_width="match_parent"
+                                                                android:id="@+id/baseItemLayout"
+                                                                android:layout_height="@dimen/column_width"
+                                                                android:addStatesFromChildren="true"
+                                                                android:foreground="@drawable/gridview_selector">
+    
+    <ua.gov.dp.econtact.gallery.customcomponents.RecyclingImageView
+        android:id="@+id/iv_thumbnail"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentTop="true"
+        android:background="@color/transparent_black" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom">
+        <TextView
+            android:id="@+id/tv_folder"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="left"
+            android:singleLine="true"
+            android:text="@string/tv_folder"
+            android:padding="@dimen/regular_dim"
+            android:textColor="@android:color/white"
+            android:background="@color/transparent_black"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_toLeftOf="@+id/tv_count"
+            android:layout_toStartOf="@+id/tv_count" />
+        <TextView
+            android:id="@+id/tv_count"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:singleLine="true"
+
+            android:text="@string/tv_folder"
+            android:padding="@dimen/regular_dim"
+            android:textColor="@android:color/white"
+            android:background="@color/transparent_black"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true" />
+    </RelativeLayout>
+
+
+
+
+</ua.gov.dp.econtact.gallery.customcomponents.GalleryFrameLayout>

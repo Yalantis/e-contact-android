@@ -1,0 +1,10 @@
+<resources>
+    
+    <style name="LoginActivity" parent="AppTheme.Base">
+        <item name="android:windowTranslucentStatus">true</item>
+        <item name="colorPrimary">@color/tool_bar_color</item>
+        <item name="colorPrimaryDark">@color/status_bar_color</item>
+        <item name="colorAccent">@color/color_accent</item>
+    </style>
+
+</resources>
