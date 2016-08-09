@@ -1,6 +1,7 @@
 ## e-contact-android
 
-![Preview](https://d13yacurqjgara.cloudfront.net/users/673942/screenshots/2213818/final-one2.gif)
+<img src="https://d13yacurqjgara.cloudfront.net/users/673942/screenshots/2213818/final-one2.gif" />
+
 
 E-contact app helps citizens of Dnipro and neighboring regions to solve problems citizens have in their everyday lives by providing a reliable channel of communication with local authorities. 
  Citizens don’t have to know exactly who they should get in touch with – a contact center forwards their complaint to whoever is the responsible branch of local authorities.
