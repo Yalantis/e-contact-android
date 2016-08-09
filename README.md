@@ -1,5 +1,7 @@
 ## e-contact-android
 
+![Preview](https://d13yacurqjgara.cloudfront.net/users/673942/screenshots/2213818/final-one2.gif)
+
 E-contact app helps citizens of Dnipro and neighboring regions to solve problems citizens have in their everyday lives by providing a reliable channel of communication with local authorities. 
  Citizens don’t have to know exactly who they should get in touch with – a contact center forwards their complaint to whoever is the responsible branch of local authorities.
 Let’s say, a road in your district needs repairs, or elevator is not working in your building or gas pipes are leaking.E-contact will help you will all these issues!
@@ -23,4 +25,29 @@ Development tools - Android Sdk,Java.
 **Realm Database** - Mobile database.
 
 **Retrofit** -Library for networking.
+
+## License
+
+The MIT License (MIT)
+
+Copyright © 2016 Yalantis
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in
+all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
+THE SOFTWARE.
+
 
