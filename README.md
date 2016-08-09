@@ -1,6 +1,6 @@
 ## e-contact-android
 
-<img src="https://d13yacurqjgara.cloudfront.net/users/673942/screenshots/2213818/final-one2.gif" />
+<img src="https://new.vk.com/doc83631682_437748159?hash=2d7fedf408b82b6506&dl=895d94c4d4c86a999c&wnd=1&module=im" />
 
 
 E-contact app helps citizens of Dnipro and neighboring regions to solve problems citizens have in their everyday lives by providing a reliable channel of communication with local authorities. 
