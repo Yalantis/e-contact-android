@@ -1,6 +1,7 @@
 ## e-contact-android
 ![Preview](https://github.com/Yalantis/e-contact-android/blob/master/preview.gif)
-<a href="https://play.google.com/store/apps/details?id=com.yalantis.ucrop.sample&utm_source=global_co&utm_medium=prtnr&utm_content=Mar2515&utm_campaign=PartBadge&pcampaignid=MKT-AC-global-none-all-co-pr-py-PartBadges-Oct1515-1"><img alt="Get it on Google Play" src="https://play.google.com/store/apps/details?id=com.yalantis.ucrop.sample&hl=en" width="185" height="60"/></a>
+<a href="https://play.google.com/store/apps/details?id=com.yalantis.ucrop.sample&hl=en"><img alt="Get it on Google Play" src="https://play.google.com/intl/en_us/badges/images/generic/en_badge_web_generic.png" width="185" height="60"/></a>
+
 E-contact app helps citizens of Dnipro and neighboring regions to solve problems citizens have in their everyday lives by providing a reliable channel of communication with local authorities. 
  Citizens don’t have to know exactly who they should get in touch with – a contact center forwards their complaint to whoever is the responsible branch of local authorities.
 Let’s say, a road in your district needs repairs, or elevator is not working in your building or gas pipes are leaking.E-contact will help you will all these issues!
